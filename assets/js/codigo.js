@@ -92,6 +92,14 @@ $(document).ready(function() {
      }); 
     $('#callnav').click(function(){
         $('#contact').show();
+    });
+    $('#sunOption').click(function() {
+        $('#dropdownButton').html('<i class="bi bi-sun-fill text-white"></i>');
+        $('html').attr('data-bs-theme','ligth');
+    });
+    $('#moonOption').click(function() {
+        $('#dropdownButton').html('<i class="bi bi-moon-stars-fill text-white"></i>');
+        $('html').attr('data-bs-theme','dark');
     });      
 
 });
